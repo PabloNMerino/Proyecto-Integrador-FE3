@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
 
-
-.lista {
-    list-style: none;
-    display: flex;
-    gap: 100px;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -15,6 +8,23 @@ header {
     font-family: 'Ysabeau SC', sans-serif;
     font-size: 20px;
     background-color: #1E3268;
+    height: 70px;
+}
+
+p {
+    font-size: 25px;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+
+.enlaces {
+    text-decoration: none;
+    color: white;
 }
 
 li:hover {

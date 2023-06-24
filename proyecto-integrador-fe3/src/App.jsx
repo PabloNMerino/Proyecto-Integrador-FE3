@@ -4,6 +4,8 @@ import Home from './routes/home'
 import Contacto from './routes/contacto'
 import Destacados from './routes/destacados'
 import Detalle from './routes/detalle'
+import { useRoutes } from 'react-router-dom'
+import { DataProvider } from './context/dataContext'
 
 function App() {
 
@@ -17,8 +19,10 @@ function App() {
 
   return (
     <>
-      <Header />
-      {router}
+      <DataProvider>
+        <Header />
+        {router}
+      </DataProvider>
     </>
   )
 }

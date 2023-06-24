@@ -1,7 +1,24 @@
-const Home = () => {
+import Card from '../components/card'
+import { DataContext } from '../context/dataContext'
+import { useContext } from 'react'
+
+const Home = (props) => {
+
+    const valores = useContext(DataContext)
+
+let users = valores.dataFetch;
+//console.log(users);
 
     return(
-        <h1>Home</h1>
+        <>
+            {/*
+                users.map((user) => {
+                    return(
+                        <p>{user.name}</p>
+                    )
+                })
+            */}
+        </>
     )
 }
 

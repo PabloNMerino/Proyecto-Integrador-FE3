@@ -5,3 +5,9 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #111C39;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
