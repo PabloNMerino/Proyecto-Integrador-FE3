@@ -6,18 +6,18 @@ const Home = (props) => {
 
     const valores = useContext(DataContext)
 
-let users = valores.dataFetch;
-//console.log(users);
+const users = valores.dataFetch;
+ console.log(users);
 
     return(
         <>
-            {/*
+            { users.length>0?  
                 users.map((user) => {
                     return(
                         <p>{user.name}</p>
                     )
-                })
-            */}
+                }) : undefined
+            } 
         </>
     )
 }
