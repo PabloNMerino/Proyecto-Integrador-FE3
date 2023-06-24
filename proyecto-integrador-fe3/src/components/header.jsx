@@ -13,7 +13,6 @@ const Header = () => {
             </ul>
             <ThemeSwitch offColor='#eef279' onColor='#120f26' offHandleColor='#dbbe00'  onHandleColor='#616063' uncheckedIcon={false} checkedIcon={false}/>
         </header>
-       
     )
 }
 
