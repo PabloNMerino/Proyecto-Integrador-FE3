@@ -14,10 +14,12 @@ const Card = (props) => {
             setIsFavourite(false)
             setHeart('white')
             props.removeUser(props.user)
+            
         } else {
             setIsFavourite(true)
             setHeart('red')
             props.addUser(props.user)
+            
         }
         //props.onClick(props.user)
     }

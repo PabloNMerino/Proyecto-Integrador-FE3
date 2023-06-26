@@ -1,7 +1,11 @@
+import { useEffect, useState } from "react";
+
+
 const Destacados = () => {
 
+
     return(
-        <h1>Destacados</h1>
+    <><p>destacados</p></>
     )
 }
 
