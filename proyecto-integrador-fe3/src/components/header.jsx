@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Style from './headerStyle.module.css'
+import Style from '../styles/headerStyle.module.css'
 import ThemeSwitch from 'react-switch'
 import { DataContext } from '../context/dataContext'
 import { useContext } from 'react'

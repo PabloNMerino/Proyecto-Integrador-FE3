@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0px;
+    font-family: 'Ysabeau SC', sans-serif;
+}
