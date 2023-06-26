@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin: 20px 0px;
     font-family: 'Ysabeau SC', sans-serif;
+    max-width: 1320px;
+    margin: 20px auto;
 }

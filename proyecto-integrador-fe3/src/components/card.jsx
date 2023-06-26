@@ -6,10 +6,20 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 const Card = (props) => {
 
+    const [isFavourite, setIsFavourite] = useState(false)
     const [heart, setHeart] = useState('white')
 
     const toggleHeart = () => {
-        heart ==='white' ? setHeart('red') : setHeart('white') 
+        if(isFavourite) {
+            setIsFavourite(false)
+            setHeart('white')
+            props.removeUser(props.user)
+        } else {
+            setIsFavourite(true)
+            setHeart('red')
+            props.addUser(props.user)
+        }
+        //props.onClick(props.user)
     }
 
     return(
@@ -17,7 +27,7 @@ const Card = (props) => {
             <div className={Style.userIcon}></div>
             <p className={Style.name}>{props.user.name}</p>
             <div className={Style.botonDetalles}>Ver Detalles</div>
-            <button onClick={toggleHeart}><FontAwesomeIcon icon={faHeart} id={Style.heart}/></button>
+            <button onClick={toggleHeart}><FontAwesomeIcon icon={faHeart} className={Style[heart]}/></button>
         </div>
     )
 }
