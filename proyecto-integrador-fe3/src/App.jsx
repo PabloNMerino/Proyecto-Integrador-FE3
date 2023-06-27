@@ -13,7 +13,7 @@ function App() {
     {path: '/', element: <Home />},
     {path: '/contacto', element: <Contacto />},
     {path: '/destacados', element: <Destacados />},
-    {path:'/detalle', element: <Detalle />},
+    {path:'/detalle/dentist/:id', element: <Detalle />},
     {path:'*', element: <div>Not Found</div>}
   ])
 

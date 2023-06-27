@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import CardDestacados from "../components/cardDestacados";
+import Style from '../styles/destacadosStyle.module.css'
 
 
 const Destacados = () => {
@@ -16,11 +17,12 @@ useEffect(()=>{
 },[destacados])
 
     return(
-    <>
+    <div className={Style.box}>
         {
-            destacados.length>0? destacados.map((destacado) => <CardDestacados key={destacado.id} user={destacado} remove={removeFromFavourites}/>) : <p>no hay nada aca</p>
+            destacados.length>0? destacados.map((destacado) => <CardDestacados key={destacado.id} user={destacado} remove={removeFromFavourites}/>)
+            : <div><div className={Style.img}/><p>no hay nadie aqui</p></div>
         }
-    </>
+    </div>
     )
 }
 

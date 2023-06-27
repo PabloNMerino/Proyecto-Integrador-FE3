@@ -31,6 +31,10 @@
     cursor: pointer;
 }
 
+.enlaceDetalles {
+    text-decoration: none;
+}
+
 .botonDetalles {
     display: flex;
     justify-content: center;

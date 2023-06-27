@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Ysabeau SC', sans-serif;
+    max-width: 1320px;
+    margin: 20px auto;
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/buscar.png);
+    background-size: contain;
+    margin: 30px 0px 60px 0px;
+}
