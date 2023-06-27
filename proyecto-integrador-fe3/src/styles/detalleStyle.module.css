@@ -1,6 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
+
+.detailCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 100px auto 0px auto;
+    width: 850px;
+    height: 300px;
+    background-color: #1E3268;
+    border-radius: 30px;
+}
+
 .img {
     width: 250px;
     height: 250px;
     background-image: url(../img/informacion-personal.png);
     background-size: contain;
+}
+
+.detailData {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.dato p {
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.icon {
+    font-size: 20px;
 }
