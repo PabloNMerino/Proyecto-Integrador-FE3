@@ -6,6 +6,7 @@ import Destacados from './routes/destacados'
 import Detalle from './routes/detalle'
 import { useRoutes } from 'react-router-dom'
 import { DataProvider } from './context/dataContext'
+import Footer from './components/footer'
 
 function App() {
 
@@ -18,12 +19,13 @@ function App() {
   ])
 
   return (
-    <>
+    <div className='mainClass'>
       <DataProvider>
         <Header />
         {router}
+        <Footer/>
       </DataProvider>
-    </>
+    </div>
   )
 }
 

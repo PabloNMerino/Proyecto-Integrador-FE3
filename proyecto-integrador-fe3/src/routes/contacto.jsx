@@ -30,6 +30,7 @@ const Contacto = () => {
     }
 
     return(
+        <div className={Style.mainSpace}>
         <form className={Style.formulario} onSubmit={handleSubmit}>
             <div className={Style.inputDiv}>
                 <label htmlFor="name">Nombre</label>
@@ -47,6 +48,7 @@ const Contacto = () => {
                 submitDone? <div className={Style.success}><p>Gracias {name}, te contactaremos a por {email}</p></div> : undefined
             }
         </form>
+        </div>
     )
 }
 
