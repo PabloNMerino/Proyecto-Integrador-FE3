@@ -21,7 +21,6 @@ const Card = (props) => {
             props.addUser(props.user)
             
         }
-        //props.onClick(props.user)
     }
 
     return(

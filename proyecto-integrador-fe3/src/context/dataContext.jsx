@@ -18,7 +18,6 @@ export const DataProvider = (props) => {
     }
 
     useEffect(()=>{
-        
         fetchData();
     }, [])
 

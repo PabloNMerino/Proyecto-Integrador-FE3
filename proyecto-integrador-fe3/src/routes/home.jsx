@@ -6,7 +6,7 @@ import Style from '../styles/homeStyle.module.css'
 const Home = (props) => {
 
     const valores = useContext(DataContext)
-    const [favourites, setFavourites] = useState([])
+    const [favourites, setFavourites] = useState(JSON.parse(localStorage.getItem('favoritos')) || [])
 
     const users = valores.dataFetch;
 
@@ -19,11 +19,9 @@ const Home = (props) => {
     }
 
     useEffect(()=>{
-        localStorage.clear()
         let arrayJson = JSON.stringify(favourites)
         localStorage.setItem('favoritos', arrayJson)
     }, [favourites])
-
 
     return(
         <div className={Style.box}>
