@@ -6,8 +6,8 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 const Card = (props) => {
 
-    const [isFavourite, setIsFavourite] = useState(false)
-    const [heart, setHeart] = useState('white')
+    const [isFavourite, setIsFavourite] = useState(props.isFavourite)
+    const [heart, setHeart] = useState(isFavourite? 'red' : 'white')
 
     const toggleHeart = () => {
         if(isFavourite) {

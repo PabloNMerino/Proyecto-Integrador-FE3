@@ -28,7 +28,7 @@ const Home = (props) => {
             { users.length>0?  
                 users.map((user) => {
                     return(
-                        <Card key={user.id} user={user} addUser={addFavourite} removeUser={removeFavourite} />
+                        <Card key={user.id} user={user} addUser={addFavourite} removeUser={removeFavourite} isFavourite={favourites.some((favourite) => favourite.id === user.id)}/>
                     )
                 }) : undefined
             } 
