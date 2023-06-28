@@ -1,4 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@500&display=swap');
+
+
 footer {
     height: 70px;
+    font-family: 'Ysabeau SC', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.dark {
     background-color: #1E3268;
+}
+
+.light {
+    background-color: #1985a1;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }

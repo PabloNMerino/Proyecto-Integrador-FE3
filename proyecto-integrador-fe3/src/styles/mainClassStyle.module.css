@@ -2,4 +2,13 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+
+}
+
+.dark {
+    background-color: #111C39;
+}
+
+.light {
+background-color: #e9ecef;
 }

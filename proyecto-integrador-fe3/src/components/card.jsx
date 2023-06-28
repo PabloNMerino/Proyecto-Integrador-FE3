@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom'
 
 const Card = (props) => {
 
+    const valores = useContext(DataContext)
+    const theme = valores.theme
+
     const [isFavourite, setIsFavourite] = useState(props.isFavourite)
     const [heart, setHeart] = useState(isFavourite? 'red' : 'white')
 
@@ -25,7 +28,7 @@ const Card = (props) => {
     }
 
     return(
-        <div className={Style.card}>
+        <div className={`${Style.card} ${Style[theme]}`}>
             <div className={Style.userIcon}></div>
             <p className={Style.name}>{props.user.name}</p>
             <Link to={`./detalle/dentist/${props.user.id}`} className={Style.enlaceDetalles}><div className={Style.botonDetalles}>Ver Detalles</div></Link>

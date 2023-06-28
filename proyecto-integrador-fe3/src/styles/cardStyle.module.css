@@ -2,12 +2,21 @@
     width: 250px;
     height: 400px;
     border-radius: 30px;
-    background-color: #1E3268;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+.dark{
+    background-color: #1E3268;
+}
+
+.light{
+    background-color: #1985a1;
+
 }
 
 .userIcon {
@@ -24,11 +33,19 @@
 .botonDetalles, button {
     width: 200px;
     height: 40px;
-    background-color: #111C39;
-    color: white;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.dark button, .dark .botonDetalles{
+    background-color: #111C39;
+    color: white;
+}
+
+.light button, .light .botonDetalles {
+    background-color: #e9ecef;
+color: black;
 }
 
 .enlaceDetalles {
@@ -46,8 +63,12 @@ button {
     font-size: 20px;
 }
 
-.white {
+.dark .white {
     color: white;
+}
+
+.light .white {
+    color: black;
 }
 
 .red {

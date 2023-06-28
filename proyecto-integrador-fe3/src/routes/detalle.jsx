@@ -10,6 +10,8 @@ const Detalle = () => {
 
     const param = useParams()
     const[user, setUser] = useState({})
+    const valores = useContext(DataContext)
+    const theme = valores.theme
 
     useEffect(()=>{
         callUser()
@@ -22,7 +24,7 @@ const Detalle = () => {
     }
 
     return(
-        <div className={Style.detailCard}>
+        <div className={`${Style.detailCard} ${Style[theme]}`}>
             <div className={Style.img}/>
             <div className={Style.detailData}>
                 <div className={Style.dato}>

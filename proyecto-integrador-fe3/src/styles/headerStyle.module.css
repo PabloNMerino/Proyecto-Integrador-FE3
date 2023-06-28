@@ -7,10 +7,17 @@ header {
     padding: 0px 50px;
     font-family: 'Ysabeau SC', sans-serif;
     font-size: 20px;
-    background-color: #1E3268;
+    
     height: 70px;
 }
 
+.dark {
+    background-color: #1E3268;
+}
+
+.light {
+    background-color: #1985a1;
+}
 p {
     font-size: 25px;
 }

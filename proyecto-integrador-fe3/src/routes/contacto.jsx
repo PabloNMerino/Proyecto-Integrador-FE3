@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import Style from '../styles/formStyle.module.css'
+import { DataContext } from '../context/dataContext';
 
 const Contacto = () => {
 
@@ -7,6 +8,8 @@ const Contacto = () => {
     const [email, setEmail] = useState('')
     const [error, setError] = useState(false)
     const [submitDone, setSubmitDone] = useState(false)
+    const valores = useContext(DataContext)
+    const theme = valores.theme
 
     const handleNameChange = (e) => {
         setSubmitDone(false)
@@ -30,7 +33,7 @@ const Contacto = () => {
     }
 
     return(
-        <div className={Style.mainSpace}>
+        <div className={`${Style.mainSpace} ${Style[theme]}`}>
         <form className={Style.formulario} onSubmit={handleSubmit}>
             <div className={Style.inputDiv}>
                 <label htmlFor="name">Nombre</label>

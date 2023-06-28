@@ -7,9 +7,10 @@ import { useContext } from 'react'
 const Header = () => {
 
     const valores = useContext(DataContext)
+    const theme = valores.theme
 
     return(
-        <header>
+        <header className={Style[theme]}>
             <p>DentaLink</p>
             <ul className={Style.lista}>
                 <li><Link className={Style.enlaces} to='./'>Home</Link></li>
